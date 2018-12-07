@@ -1,0 +1,11 @@
+.main_content{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-gap: 1%;
+    background-color: cadetblue;
+}
+.portada{
+    background-image: url("../assets/rieiro-arbol.jpg");
+    background-size: 100vh 100vw;
+    
+}
