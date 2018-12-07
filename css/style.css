@@ -1,11 +1,47 @@
+/*background-image: url("../assets/rieiro-arbol.jpg");*/
+    /*background-image: url("https://farm1.staticflickr.com/603/20090715304_24593b813c_k.jpg");*/
+/*object-fit: scale-down;*/
+
+* {
+	border:0;
+	padding:0;
+}
+/*
 .main_content{
     display: grid;
-    grid-template-columns: 49% 49%;
+    grid-template-columns: 20% 60% 20%;
     grid-gap: 1%;
     background-color: cadetblue;
+}*/
+
+.portada-wrapper{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 10vh 90vh;
+    background-image: url("../assets/barreiros-playa.jpg");
+    background-position: center;
+    color: white;
 }
+/*
 .portada{
-    background-image: url("../assets/rieiro-arbol.jpg");
-    background-size: 100vh 100vw;
-    
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 10% 90%;
+}*/
+
+
+
+nav li{
+	display: inline-block;
+	
+}
+
+.nav-menu{
+	justify-self:end;
+}
+
+.main-title{
+	text-align: center;
+	font-color: white;
+	align-self: center;
 }
