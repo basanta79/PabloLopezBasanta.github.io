@@ -45,3 +45,17 @@ nav li{
 	font-color: white;
 	align-self: center;
 }
+
+.content-wrapper{
+	display: flex;
+	justify-content: center;
+
+}
+
+.content-left, .content-rigth{
+	flex-grow: 1;
+}
+
+.content-center{
+	flex-grow: 2;
+}
