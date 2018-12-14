@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pablo López Basanta CV</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Quicksand:400,700" rel="stylesheet">
 </head>
 <body>
+    <!--  -->
+    <!--  -->
     <!--Portada. Imagen con texto que ha de ocpuar el viewPort de la pantalla-->
     <header class="portada-wrapper">
         <div class="nav-menu">
@@ -26,19 +29,21 @@
             <h1>Pablo López Basanta</h1>            
         </div>
     </header>
+    <!--  -->
+    <!--  -->
     <!--Contenido del CV. Es el contenido principal Este main contendrá las diferentes secciones.-->
     <main class="main_content">
         <div class="content-wrapper">
             <div class="content-left">
                 <!--Contacto. Métodos de contacto.-->
-                <section>
-                    <h2>Contacto</h2>
+                <section  class="unit">
+                    <h2 class="title-centered">Contacto</h2>
                     <p>tel: 646429260</p>
                     <p>basanta79@gmail.com</p>
                 </section>
                 <!--Idiomas. Idiomas que hablo-->
-                <section>
-                        <h2>Idiomas</h2>
+                <section  class="unit">
+                        <h2 class="title-centered">Idiomas</h2>
                         <ul>
                             <li>
                                 <h3>Castellano</h3>
@@ -61,17 +66,20 @@
             </div>
             <div class="content-center">
                 <!--Quien soy. Sección para hablar sobre quien soy.-->
-                <section>
-                    <h2>Quien soy.</h2>
+                <section  class="unit">
+                    <h2 class="title-left">Quien soy.</h2>
                     <article>
                         <p>Me llamo Pablo López Basanta. Nací y crecí en barcelona aunque ahora vivo fuera. Siempre me han interesado muchas cosas y la tecnología por encima de todo.</p>
+                        <p>He sido mucha cosas pero ahora soy desarrollador. Me gusta esa palabra por que para mi tiene un significado que va mas alla de der programador.</p>
+                        <p>Mi definicion de desarrollador es la de alguien que busca soluciones, que no se planta en lo que conoce y que en ante cada desafio trata de buscar la solución que mas se adapta.</p>
+                        <p>No me caso con ningún lenguaje, VisualBasic, .NET, C, C++, PHP, Python, JavaScript. A veces por que he tenido que mantener algo que estaba hecho con esas tecnologias, a veces, simplemente por que he considerado que era la mejor solución.</p>
                     </article>
                 </section>
                 <!--Formación-->
-                <section>
+                <section  class="unit">
                     <!--Estudios oficiales-->
                     <header>
-                        <h2>Estudios oficiales</h2>
+                        <h2  class="title-left">Estudios oficiales</h2>
                     </header>
                     <article>
                         <h3>2004 - Ingenieria en Organización industrial</h3>
@@ -83,7 +91,7 @@
                     </article>
                     <!-- Estudios no oficiales -->
                     <header>
-                        <h2>Estudios no oficiales</h2>
+                        <h2  class="title-left">Estudios no oficiales</h2>
                     </header>
                     <article>
                         <h3>2019 - Bootcamp fullstack desarrollo web</h3>
@@ -92,7 +100,7 @@
                     </article>
                     <!-- Otros estudios, por ejemplo utodidactas -->
                     <header>
-                        <h2>Otros cursos</h2>
+                        <h2  class="title-left">Otros cursos</h2>
                         <p>Cursos online, no oficiales o cursados por mi cuenta</p>
                     </header>
                     <article>
@@ -113,9 +121,9 @@
                         </article>
                 </section>
                 <!--Experiencia. Sobre mi experiencia laboral-->
-                <section>
+                <section  class="unit">
                     <header>
-                    <h2>Experiencia</h2>
+                    <h2  class="title-left">Experiencia</h2>
                     <p>Empresas en las que he trabajado y tareas desempeñadas</p>
                     </header>
                     <article>
@@ -144,8 +152,8 @@
                         </article>
                 </section>
                 <!--Formulario. Separamos esto de los datos de contacto por que el formulario lo situaremos en una zona menos importante que los datos de contacto.-->
-                <section>
-                    <h2>Formulario</h2>
+                <section  class="unit">
+                    <h2  class="title-left">Formulario</h2>
                     <p>Aqui dispones de un formulario para enviarme un mensaje</p>
                     <form action="" id=contact>
                         <ul>
@@ -181,22 +189,29 @@
             </div>
             <div class="content-rigth">
                 <!--Sobre mi. Para hablar sobre mis aficiones.-->
-                <section>
-                    <h2>Algo sobre mi</h2>
+                <section class="unit">
+                    <h2 class="title-centered">Algo sobre mi</h2>
+                    <p>Naci y crecí en Barcelona, como a la mayoria de la gente, me gusta la música, el cine, salir con los amigos, en definitiva disfrutar de la vida.</p>
+                    <p>Soy bastante curioso y eso se refleja en que realmente mi formación abarca ámbitos muy diferentes, e incluso profesionalmente me han ofrecido y he desempeñado una amplia diversidad de roles.</p>
+                    <p>Mis aficiones son variadas, me gusta bailar, me gustar montar maquetas, me gusta practicar deporte, especialmente futbol, aunque no desprecio una partida a cualquer otro deporte.</p>
                 </section>
             </div>
         </div>
     </main>
+    <!--  -->
+    <!--  -->
     <!--Pié. Aqui pondremos el pie de la página, situaremos un pequeño indice. Aqui no situaremos los datos de contacto por que los datos de contacto es un elemento importnte dentro de un curriculum y le daremos una sección dentro del main.-->
     <footer class="footer">
-        <ul>
-            <li>twitter</li>
-            <li>Facebook</li>
-            <li>linkedin</li>
-            <li>instagram</li>
-            <li>github</li>
-            <li>gitlab</li>
-        </ul>
+        <div class="footer-nav">
+            <ul>
+                <li>twitter</li>
+                <li>Facebook</li>
+                <li>linkedin</li>
+                <li>instagram</li>
+                <li>github</li>
+                <li>gitlab</li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
