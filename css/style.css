@@ -3,20 +3,14 @@
 /*object-fit: scale-down;*/
 
 * {
-	border:0;
+	margin:0;
 	padding:0;
 	font-family: 'Quicksand', sans-serif;
 	scroll-behavior: smooth;
 }
-/*
-.main_content{
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-gap: 1%;
-    background-color: cadetblue;
-}*/
 
 .portada-wrapper{
+	margin 0px;
 	display: grid;
 	grid-template-columns: 100%;
 	grid-template-rows: 10vh 90vh;
@@ -24,16 +18,12 @@
     background-position: center;
     color: white;
 }
-/*
-.portada{
-	display: grid;
-	grid-template-columns: 100%;
-	grid-template-rows: 10% 90%;
-}*/
 
+/**
+*  MENUS
+*/
 
-
-nav li{
+.nav-menu li{
 	display: inline-block;
 	padding: 5px 10px 5px 10px;
 }
@@ -48,7 +38,8 @@ nav a{
 	justify-self:end;
 	position:fixed;
 	background-color: black;
-	border-radius: 20px;
+	visibility: hidden;
+	padding: 0.2rem 1.5rem 0.2rem 1.5rem;
 }
 
 .main-title{
@@ -61,24 +52,44 @@ nav a{
 	grid-row:2;
 }
 
+
+
 .content-wrapper{
 	display: flex;
 	justify-content: center;
 
 }
 
-.content-left{
-	margin: 1rem;
-	width: 10%;
+.nav-left{
+	position: fixed;
+	/* display: block; */
+	margin: 0rem;
+	width: 15%;
+	/* position: fixed; */
+	top: 0px;
+	left: 0px;
+	background-color: black;
+	color: white;
+	padding: 0px 0px 0px 10px;
+	height: 100vh;
 }
 
-.content-rigth{
+.nav-left li{
+	padding: 5px 10px 5px 10px;
+}
+
+.content-left{
 	margin: 1rem;
 	width: 25%;
 }
 
+.content-rigth{
+	margin: 1rem;
+	width: 35%;
+}
+
 .content-center{
-	width: 60%;
+	width: 50%;
 	margin: 1rem;
 }
 
@@ -106,18 +117,21 @@ ul{
 
 article img{
 	float: left;
-	width:100px;
-	height: 100px;
+	width: 20%;
+	height: 20%;
 	margin: 0px 5px 5px 0px;
 }
 
+video, iframe{
+	margin-top:1rem;
+	margin-bottom: 1rem;
+	width: 100%;
+}
 
 
-
-
-
-
-
+/**
+* FOOTER
+**/
 
 .footer{
 	background-color: grey;
@@ -139,4 +153,46 @@ li svg{
 	width: 40px;
 	height: 40px;
 }
+
+/**
+*  MEDIA QUERIES
+**/
+
+@media (min-width: 768px){
+	.mobile{
+		display: none;
+	}
+}
+
+@media (max-width: 768px){
+	.tablet{
+		display: none;
+	}
+	.nav-menu{
+		visibility: visible;
+	}
+
+	.content-wrapper{
+		display: block;
+		justify-content: center;
+	
+	}
+	.content-center{
+		width: 100%;
+		margin: 1rem;
+	}
+
+	.content-rigth{
+		width: 100%;
+		margin: 1rem;
+	}
+
+	.content-left{
+		display: none;
+		width: 0%;
+		margin: 0rem;
+	}
+}
+
+
 

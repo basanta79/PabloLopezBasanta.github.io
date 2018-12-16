@@ -7,6 +7,7 @@
     <title>Pablo López Basanta CV</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Quicksand:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 <body>
     <!--  -->
@@ -14,7 +15,10 @@
     <!--Portada. Imagen con texto que ha de ocpuar el viewPort de la pantalla-->
     <header class="portada-wrapper" id="home">
         <div class="nav-menu">
-            <nav >
+            <nav class="mobile">
+                <i class="fas fa-bars"></i>
+            </nav>
+            <!-- <nav >
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#estudios">Estudios</a></li>
@@ -24,7 +28,7 @@
                     <li><a href="#contacto">Contacto</a></li>
                     <li><a href="#formulario">Formulario</a></li>
                 </ul>
-            </nav>
+            </nav> -->
         </div>
         <div class="main-title">
             <h1>Pablo López Basanta</h1>            
@@ -36,8 +40,9 @@
     <main class="main_content">
         <div class="content-wrapper">
                 <div class="content-left">
-                        <nav >
+                        <nav  class="tablet nav-left">
                             <ul>
+                                <!-- <li><i class="fas fa-bars"></i></li> -->
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#estudios">Estudios</a></li>
                                 <li><a href="#idiomas">Idiomas</a></li>
@@ -47,6 +52,7 @@
                                 <li><a href="#formulario">Formulario</a></li>
                             </ul>
                         </nav>
+
                     </div>
             <div class="content-center">
                 <!--Quien soy. Sección para hablar sobre quien soy.-->
@@ -207,7 +213,12 @@
                     <p>Naci y crecí en Barcelona, como a la mayoria de la gente, me gusta la música, el cine, salir con los amigos, en definitiva disfrutar de la vida.</p>
                     <p>Soy bastante curioso y eso se refleja en que realmente mi formación abarca ámbitos muy diferentes, e incluso profesionalmente me han ofrecido y he desempeñado una amplia diversidad de roles.</p>
                     <p>Mis aficiones son variadas, me gusta bailar, me gustar montar maquetas, me gusta practicar deporte, especialmente futbol, aunque no desprecio una partida a cualquer otro deporte.</p>
+                    <p>Mi objetivo con el baile es este:</p>
                     <iframe src="https://www.youtube.com/embed/mg6-SnUl0A0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Pero esta es mi realidad:</p>
+                    <video controls>
+                        <source src="./assets/realidad.mp4" type="video/mp4">
+                    </video>
                 </section>
             </div>
         </div>
