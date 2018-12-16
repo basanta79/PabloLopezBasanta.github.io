@@ -24,7 +24,6 @@
 */
 
 .nav-menu li{
-	display: inline-block;
 	padding: 5px 10px 5px 10px;
 }
 
@@ -32,6 +31,10 @@ nav a{
 	text-decoration: none;
 	color: inherit;
 	text-transform: uppercase;
+}
+
+.nav-dropdown{
+	display:block;
 }
 
 .nav-menu{
@@ -170,6 +173,7 @@ li svg{
 	}
 	.nav-menu{
 		visibility: visible;
+		width: 100vw;
 	}
 
 	.content-wrapper{
@@ -179,19 +183,14 @@ li svg{
 	}
 	.content-center{
 		width: 100%;
-		margin: 1rem;
+		margin: 0rem;
 	}
 
 	.content-rigth{
 		width: 100%;
-		margin: 1rem;
-	}
-
-	.content-left{
-		display: none;
-		width: 0%;
 		margin: 0rem;
 	}
+
 }
 
 
