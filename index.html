@@ -15,11 +15,11 @@
     <!--  -->
     <!--Portada. Imagen con texto que ha de ocpuar el viewPort de la pantalla-->
     <header class="portada-wrapper" id="home">
-        <div class="nav-menu">
-            <nav class="mobile">
+        <div class="mobile nav-menu">
+            <nav class="nav-icon">
                 <i id="btnMenu" class="fas fa-bars"></i>
             </nav>
-            <nav class="mobile nav-dropdown">
+            <nav id="btnSelection" class="mobile nav-dropdown hide">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#estudios">Estudios</a></li>
@@ -44,20 +44,21 @@
                         <nav  class="tablet nav-left">
                             <ul>
                                 <!-- <li><i class="fas fa-bars"></i></li> -->
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#estudios">Estudios</a></li>
-                                <li><a href="#idiomas">Idiomas</a></li>
-                                <li><a href="#experiencia">Experiencia</a></li>
-                                <li><a href="#aficiones">Algo sobre mi</a></li>
-                                <li><a href="#contacto">Contacto</a></li>
-                                <li><a href="#formulario">Formulario</a></li>
+                                <li><a href="#home" id="Home" class="active">Home</a></li>
+                                <li><a href="#quien-soy" id="quien-so">Quien Soy</a></li>
+                                <li><a href="#estudios" id="estudio">Estudios</a></li>
+                                <li><a href="#idiomas" id="idioma">Idiomas</a></li>
+                                <li><a href="#experiencia" id="experienci">Experiencia</a></li>
+                                <li><a href="#aficiones" id="sobre-m">Algo sobre mi</a></li>
+                                <li><a href="#contacto" id="contact">Contacto</a></li>
+                                <li><a href="#formulario" id="formulari">Formulario</a></li>
                             </ul>
                         </nav>
 
                     </div>
             <div class="content-center">
                 <!--Quien soy. Sección para hablar sobre quien soy.-->
-                <section  class="unit">
+                <section  class="unit" id="quien-soy">
                     <h2 class="title-left">Quien soy.</h2>
                     <article>
                         <img src="./assets/pau.png" alt="foto-pablo-lopez-basanta">
@@ -144,10 +145,10 @@
                         </article>
                 </section>
                 <!--Formulario. Separamos esto de los datos de contacto por que el formulario lo situaremos en una zona menos importante que los datos de contacto.-->
-                <section  class="unit" id="fomrulario">
+                <section  class="unit" id="formulario">
                     <h2  class="title-left">Formulario</h2>
                     <p>Aqui dispones de un formulario para enviarme un mensaje</p>
-                    <form action="" id="formulario">
+                    <form action="">
                         <ul>
                             <li class="form-contact">
                                 <label for="nombre">Nombre:</label>
@@ -209,7 +210,7 @@
                         </ul>
                 </section>
                 <!--Sobre mi. Para hablar sobre mis aficiones.-->
-                <section class="unit">
+                <section class="unit" id="sobre-mi">
                     <h2 class="title-centered">Algo sobre mi</h2>
                     <p>Naci y crecí en Barcelona, como a la mayoria de la gente, me gusta la música, el cine, salir con los amigos, en definitiva disfrutar de la vida.</p>
                     <p>Soy bastante curioso y eso se refleja en que realmente mi formación abarca ámbitos muy diferentes, e incluso profesionalmente me han ofrecido y he desempeñado una amplia diversidad de roles.</p>

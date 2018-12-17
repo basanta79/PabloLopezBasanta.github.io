@@ -25,7 +25,7 @@ Dentro de la web encontraremos las siguientes temáticas diferentes:
 - Contacto: donde se mostrará los datos de contacto
 
 
-También se deberá implementar un menú para poder navegar por las diferentes secciones, en el que se vea reflejado el scroll  en la barra lateral. 
+También se deberá implementar un menú para poder navegar por las diferentes secciones, en el que se vea reflejado el scroll,  en la barra lateral. 
 Al mismo tiempo, se implementará un "smooth scroll" para realizar la navegación.
 
 Desde el punto de vista del CSS, se incluirán las Media Queries necesarias para conseguir un diseño responsivo, en el que no falte el repliegue del menú y su aparición al hacer clic en el icono adecuado. Se deberá implementar alguna animacion CSS sin utilizar librerías externas.
@@ -40,3 +40,12 @@ En la zona de formulario, se deberá implementar mínimo:
 - Un número de contacto, validando que el número es correcto
 - Un campo de textarea, con un máximo de 150 palabras (no caracteres).
 - Un botón de envío.
+
+
+Resumen de funcionalidades de JS:
+[x] Despliegue y repliegue de menú en versión mobile
+[ ] Scroll Spy del menú
+[ ] Campo dinamico de texto en fomrulario cuando seleccionamos Otros
+[ ] Limitar el número de palabras en el textarea del formulario a 150
+[ ] Smooth scroll para edge ya que no lo soporta de forma nativa
+[ ] Envio del formulario
