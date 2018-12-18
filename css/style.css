@@ -149,6 +149,14 @@ video, iframe{
 	width: 100%;
 }
 
+/**
+* FORM
+*/
+.info{
+	font-size: 0.7rem;
+}
+
+
 
 /**
 * FOOTER

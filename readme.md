@@ -44,8 +44,8 @@ En la zona de formulario, se deberá implementar mínimo:
 
 Resumen de funcionalidades de JS:
 [x] Despliegue y repliegue de menú en versión mobile
-[ ] Scroll Spy del menú
+[X] Scroll Spy del menú
 [ ] Campo dinamico de texto en fomrulario cuando seleccionamos Otros
-[ ] Limitar el número de palabras en el textarea del formulario a 150
+[X] Limitar el número de palabras en el textarea del formulario a 150
 [ ] Smooth scroll para edge ya que no lo soporta de forma nativa
 [ ] Envio del formulario

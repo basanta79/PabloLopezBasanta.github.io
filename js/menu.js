@@ -52,7 +52,8 @@ export function spyScroll(){
         })
         /* console.log(actualSection) */
         aMenu.forEach(element =>{
-            if (element.id == actualSection){
+            console.log(element.id)
+            if (element.id == "mnu-" + actualSection){
                 element.classList.add('active')
             }else{
                 element.classList.remove('active')
