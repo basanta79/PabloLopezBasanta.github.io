@@ -13,7 +13,9 @@ export function mngMenu(){
     /* arrMenu[1].addEventListener('click', scrollToSection) */
 
     function scrollToSection(oEv){
-        console.log(oEv)
+        console.log("scrolltosection:")
+        /* console.log(oEv) */
+        console.log(oEv.srcElement.id)
         window.scroll(0,1000)
     }
 
