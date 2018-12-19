@@ -3,21 +3,31 @@ export function mngMenu(){
     console.log('hola mundo')
     let oMenuButton = document.querySelector('#btnMenu')
     let oMenuSelection = document.querySelector('#btnSelection')
-    console.log(oMenuButton)
+    let arrMenu = document.querySelectorAll('.mnu-btn')
+    console.log(arrMenu)
     oMenuButton.addEventListener('click', toogleMenuMobile)
     oMenuSelection.addEventListener('click', toogleMenuMobile)
+    arrMenu.forEach(element =>{
+        element.addEventListener('click',scrollToSection)
+    })
+    /* arrMenu[1].addEventListener('click', scrollToSection) */
+
+    function scrollToSection(oEv){
+        console.log(oEv)
+        window.scroll(0,1000)
+    }
 
     function toogleMenuMobile(oEvent){
-        console.log('has hecho click en boton')
+        /* console.log('has hecho click en boton') */
         let oMenuMobile = document.querySelector('.nav-dropdown')
-        console.log(oMenuMobile)
+        /* console.log(oMenuMobile) */
         oMenuMobile.classList.toggle('hide')
 
     }
 }
 
 export function spyScroll(){
-    let aSections = document.querySelectorAll("section")
+    let aSections = document.querySelectorAll(".anchor")
     let aMenu = document.querySelectorAll(".nav-left a")
     let oSections = new Array
     let oSectionsSorted = new Array
@@ -33,9 +43,9 @@ export function spyScroll(){
         oSectionsSorted = oSections.sort(function(a,b){
             return a['offset']-b['offset']
         })
-        console.log(oSectionsSorted)
+        /* console.log(oSectionsSorted) */
         aMenu.forEach( element =>{
-            console.log(element.id)
+           /*  console.log(element.id) */
 
         })
     }
@@ -52,7 +62,7 @@ export function spyScroll(){
         })
         /* console.log(actualSection) */
         aMenu.forEach(element =>{
-            console.log(element.id)
+            /* console.log(element.id) */
             if (element.id == "mnu-" + actualSection){
                 element.classList.add('active')
             }else{

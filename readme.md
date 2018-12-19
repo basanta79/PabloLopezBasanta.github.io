@@ -33,19 +33,19 @@ Desde el punto de vista del CSS, se incluirán las Media Queries necesarias para
 Se puede usar cualquier regla de estilo CSS3 que cumpla con las condiciones de compatibilidad de la aplicación.
 
 En la zona de formulario, se deberá implementar mínimo:
-- Un campo de nombre requerido.
-- Un campo de email y validarlo correctamente.
-- Un campo se selección ("como me has conocido"), que tenga varias opciones y una de ellas se "Otros";
+[X] Un campo de nombre requerido.
+[X] Un campo de email y validarlo correctamente.
+[X] Un campo se selección ("como me has conocido"), que tenga varias opciones y una de ellas sea "Otros";
   si seleccionamos esta opción nos debe aparecer un campo dinámicamente de tipo texto para rellenar libremente.
-- Un número de contacto, validando que el número es correcto
-- Un campo de textarea, con un máximo de 150 palabras (no caracteres).
-- Un botón de envío.
+[X] Un número de contacto, validando que el número es correcto
+[X] Un campo de textarea, con un máximo de 150 palabras (no caracteres).
+[X] Un botón de envío.
 
 
 Resumen de funcionalidades de JS:
 [x] Despliegue y repliegue de menú en versión mobile
 [X] Scroll Spy del menú
-[ ] Campo dinamico de texto en fomrulario cuando seleccionamos Otros
+[X] Campo dinamico de texto en fomrulario cuando seleccionamos Otros
 [X] Limitar el número de palabras en el textarea del formulario a 150
 [ ] Smooth scroll para edge ya que no lo soporta de forma nativa
-[ ] Envio del formulario
+[X] Envio del formulario
