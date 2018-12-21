@@ -166,6 +166,7 @@ nav li{
 	margin-bottom:3rem;
 	padding: 1rem;
 	border-radius: 25px;
+	min-height: 150px;
 }
 
 ul{
@@ -188,6 +189,8 @@ article img{
 	width: 20%;
 	height: 20%;
 	margin: 0px 5px 5px 0px;
+	max-width: 150px;
+	max-height: 150px;
 }
 
 video, iframe{
