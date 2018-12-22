@@ -21,7 +21,7 @@
 	display: grid;
 	/* grid-template-columns: 100%;
 	grid-template-rows: 10vh 90vh; */
-	: 20vw 80vw;
+	grid-template-columns: 20vw 80vw;
 	grid-template-rows: 100vh;
     background-image: url("../assets/barreiros-playa.jpg");
     background-position: center;
@@ -104,15 +104,16 @@ nav li{
 	visibility: none;
 }
 
-.nav-icon{
-	
-}
 .nav-menu{
 	position: fixed;
 	/* justify-self:end; */
 	width: 100vw;
 	background-color: black;
 	padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+}
+
+.nav-icon{
+	cursor:pointer;
 }
 
 .hide{
@@ -203,9 +204,45 @@ video, iframe{
 /**
 * FORM
 */
+.grid-form{
+	display:grid;
+	grid-template-rows: 10% 10% 10% 10% 10% 10% 10%;
+	grid-gap: 1%;
+	padding: 1%;
+
+}
 .info{
 	font-size: 0.7rem;
 }
+
+input, textArea, select{
+	border-radius: 4px;
+	border: solid 0.5px;
+}
+
+.grid-form-button{
+	justify-self: center;
+}
+
+.button{
+	padding: 6px 15px;
+	text-transform: uppercase;
+	font-size: 1.15rem;
+	color: white;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+	background-color: #57a957;
+	border-color:  #57a957;
+	border-radius: 9px;
+	border: solid;
+	font-weight: bold;
+	cursor:pointer;
+}
+
+.button:hover{
+	background-color: #62c462;
+}
+
+
 
 
 
@@ -256,6 +293,10 @@ li svg{
 }
 
 @media (max-width: 768px){
+	nav li a{
+		text-decoration: none;
+		color: inherit;
+	}
 	.tablet{
 		display: none;
 	}
@@ -266,10 +307,6 @@ li svg{
 
 	.nav-menu{
 		width: 100vw;
-	}
-
-	.nav-dropdown{
-		/* visibility: none; */
 	}
 
 	.content-wrapper{

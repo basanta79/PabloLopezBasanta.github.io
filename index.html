@@ -22,13 +22,14 @@
             </nav>
             <nav id="btnSelection" class="mobile nav-dropdown hide">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#estudios">Estudios</a></li>
-                    <li><a href="#idiomas">Idiomas</a></li>
-                    <li><a href="#experiencia">Experiencia</a></li>
-                    <li><a href="#aficiones">Algo sobre mi</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#formulario">Formulario</a></li>
+                    <li id="mnum-home"><a href="#home">Home</a></li>
+                    <li id="mnum-quiensoy"><a href="#quiensoy">Quien Soy</a></li>                    
+                    <li id="mnum-contacto"><a href="#contacto">Contacto</a></li>
+                    <li id="mnum-estudios"><a href="#estudios">Estudios</a></li>
+                    <li id="mnum-experiencia"><a href="#experiencia">Experiencia</a></li>
+                    <li id="mnum-idiomas"><a href="#idiomas">Idiomas</a></li>
+                    <li id="mnum-aficiones"><a href="#aficiones">Algo sobre mi</a></li>                    
+                    <li id="mnum-formulario"><a href="#formulario">Formulario</a></li>
                 </ul>
             </nav>
         </div>
@@ -197,7 +198,7 @@
                     <h2  class="title-left">Formulario</h2>
                     <p>Aqui dispones de un formulario para enviarme un mensaje</p>
                     <form id="contact-form" action="">
-                        <ul>
+                        <ul class="grid-form">
                             <li class="form-contact">
                                 <label for="nombre">Nombre:</label>
                                 <input type="text" name="nombre" id="name" placeholder="Nombre" required>
@@ -226,9 +227,11 @@
                             <li>
                                 <label for="comments">Cometarios</label> <span class="info" id="remaining-words">Quedan xx palabras</span> <br>
                                 <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Dejame un comentario"></textarea>
+                            </li>                        
+                            <li class="grid-form-button">
+                                <button class="button" type="submit" id="send">Envío</button>
                             </li>
                         </ul>
-                        <button class="button" type="submit" id="send">Envío</button>
                     </form>
                 </section>
   

@@ -21,6 +21,7 @@ export function mngMenu(){
 export function spyScroll(){
     let aSections = []
     let aMenu = document.querySelectorAll(".nav-left li")
+    let amMenu = document.querySelectorAll(".nav-dropdown li")
     let oSections = new Array
     let oSectionsSorted = new Array
     let arrMenu = document.querySelectorAll('.mnu-btn')
@@ -163,6 +164,17 @@ export function spyScroll(){
                 element.classList.remove('active')
             }
         })
+
+        amMenu.forEach(element =>{
+            /* console.log(element.id) */
+            if (element.id == "mnum-" + actualSection){
+                element.classList.add('active')
+            }else{
+                element.classList.remove('active')
+            }
+        })
+
+
     }
     
     
