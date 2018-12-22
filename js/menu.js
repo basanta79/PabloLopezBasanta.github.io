@@ -111,7 +111,7 @@ export function spyScroll(){
                 window.scrollTo(0, index)
                 /* console.log(index) */
             }
-            console.log("scrollUp")
+            /* console.log("scrollUp") */
         }
 
         function moveScrollDown(){
