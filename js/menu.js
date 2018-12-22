@@ -29,7 +29,7 @@ export function spyScroll(){
     window.addEventListener('resize', calculateNewOffsets)
     window.addEventListener('scroll', changeMenu)
     arrMenu.forEach(element =>{
-        element.addEventListener('click',scrollToSection)
+        element.addEventListener('click',scrollToSection2)
     })
     sectionArrayBuilder();
 
@@ -39,11 +39,11 @@ export function spyScroll(){
     }
 
     function scrollToSection(oEv){
-        
+        sectionArrayBuilder();
         let desiredOffset =0
-        console.log("scrolltosection:")
+        /* console.log("scrolltosection:") */
         /* console.log(oEv) */
-        console.log(oEv.srcElement.id)
+        /* console.log(oEv.srcElement.id) */
         /* window.scroll(0,1000) */
         /* document.querySelector("#formulario").scrollIntoView({behaviour: 'smooth'}) */
         /* document.scrollTop=0 */
@@ -51,29 +51,79 @@ export function spyScroll(){
         console.log(strNameTemp[1])
         oSectionsSorted.forEach(element => {
             if (element.id == strNameTemp[1]){
-                desiredOffset = element.offset +20
+                desiredOffset = element.offset
             }
         })
         
         console.log("queremos ir a la section "+desiredOffset)
         let index = window.pageYOffset;
-        console.log(index)
+        console.log("Estamos en: " + index)
         if (index<desiredOffset){
             for (index =  0; index < desiredOffset; index++) {
+                /* window.scrollTo(0, index)
+                console.log(index) */
                 setTimeout(function(){
-                    window.scrollTo(0, index)
-                },400)
+                    window.scrollTo(0, index) 
+                    console.log(index)
+                },500)
+                console.log(index)
             }
         }else{
             for (index =  window.pageYOffset; index > desiredOffset; index--) {
                 setTimeout(function(){
                     window.scrollTo(0, index)
-                },400)
+                },500)
             }
         }
         
-        window.scroll(0, desiredOffset)
-        console.log(window.pageYOffset)
+        /* window.scroll(0, desiredOffset) */
+        console.log ("coordenadas finales: " + window.pageYOffset)
+    }
+
+
+    function scrollToSection2(oEv){
+        sectionArrayBuilder();
+        let desiredOffset =0
+        let strNameTemp = oEv.srcElement.id.split('-')
+        console.log(strNameTemp[1])
+        oSectionsSorted.forEach(element => {
+            if (element.id == strNameTemp[1]){
+                desiredOffset = element.offset
+            }
+        })
+        console.log("queremos ir a la section "+desiredOffset)
+        let index = window.pageYOffset;
+        console.log("Estamos en: " + index)
+
+        if (desiredOffset-index>0){
+            var id = setInterval(moveScrollDown,1)
+        }else{
+            var id = setInterval(moveScrollUp,1)
+        }
+
+        function moveScrollUp(){
+            let index = window.pageYOffset;
+            if ((index-10) <= desiredOffset){
+                clearInterval(id)
+            }else{
+                index-=10;
+                window.scrollTo(0, index)
+                /* console.log(index) */
+            }
+            console.log("scrollUp")
+        }
+
+        function moveScrollDown(){
+            let index = window.pageYOffset;
+            if ((index) >= desiredOffset){
+                clearInterval(id)
+            }else{
+                index+=10;
+                window.scrollTo(0, index)
+                /* console.log(index) */
+            }
+        }
+
     }
     
     function sectionArrayBuilder(){
@@ -89,13 +139,13 @@ export function spyScroll(){
         })
         /* console.log(oSectionsSorted) */
         oSectionsSorted.forEach( element =>{
-            console.log(element.id + element.offset)
+           /*  console.log(element.id + element.offset) */
 
         })
     }
 
     function changeMenu(){
-        let pageOffset = window.pageYOffset
+        let pageOffset = window.pageYOffset + 2
         let actualSection
         /* console.log(pageOffset) */
         oSectionsSorted.forEach(element =>{

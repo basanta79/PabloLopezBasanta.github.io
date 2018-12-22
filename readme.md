@@ -17,20 +17,22 @@ La página web tiene que ser visible correctamente tanto en Google Chrome, como 
 Se deberá crear una estructura web con contenido semántico mediante las etiquetas de HTML 5.
 
 Dentro de la web encontraremos las siguientes temáticas diferentes:
-- Portada: donde pondremos una imagen de foto con texto (deberá ocupar el viewport de la pantalla}
-- Quien soy: donde se mostrará información de interés y una foto vuestra.
-- Estudios: sección donde aparecerán nuestros diferentes estudios o cursos realizados.
-- Experiencia: donde se contará la experiencia laboral con la que contamos.
-- Sobre mí: Sección donde mostraremos algunos de nuestros intereses o aficiones con un pequeño video (máximo 10 Mb).
-- Contacto: donde se mostrará los datos de contacto
+[X] Portada: donde pondremos una imagen de foto con texto (deberá ocupar el viewport de la pantalla}
+[X] Quien soy: donde se mostrará información de interés y una foto vuestra.
+[X] Sobre mí: Sección donde mostraremos algunos de nuestros intereses o aficiones con un pequeño video (máximo 10 Mb).
+[X] Estudios: sección donde aparecerán nuestros diferentes estudios o cursos realizados.
+[X] Experiencia: donde se contará la experiencia laboral con la que contamos.
+[X] Contacto: donde se mostrará los datos de contacto
 
 
-También se deberá implementar un menú para poder navegar por las diferentes secciones, en el que se vea reflejado el scroll,  en la barra lateral. 
-Al mismo tiempo, se implementará un "smooth scroll" para realizar la navegación.
+[X]También se deberá implementar un menú para poder navegar por las diferentes secciones, en el que se vea reflejado el scroll,  en la barra lateral. 
+[X]Al mismo tiempo, se implementará un "smooth scroll" para realizar la navegación.
 
-Desde el punto de vista del CSS, se incluirán las Media Queries necesarias para conseguir un diseño responsivo, en el que no falte el repliegue del menú y su aparición al hacer clic en el icono adecuado. Se deberá implementar alguna animacion CSS sin utilizar librerías externas.
+[X]Desde el punto de vista del CSS, se incluirán las Media Queries necesarias para conseguir un diseño responsivo, en el que no falte el repliegue del menú y su aparición al hacer clic en el icono adecuado. 
 
-Se puede usar cualquier regla de estilo CSS3 que cumpla con las condiciones de compatibilidad de la aplicación.
+[X]Se deberá implementar alguna animacion CSS sin utilizar librerías externas.
+
+[X]Se puede usar cualquier regla de estilo CSS3 que cumpla con las condiciones de compatibilidad de la aplicación.
 
 En la zona de formulario, se deberá implementar mínimo:
 [X] Un campo de nombre requerido.
@@ -47,5 +49,5 @@ Resumen de funcionalidades de JS:
 [X] Scroll Spy del menú
 [X] Campo dinamico de texto en fomrulario cuando seleccionamos Otros
 [X] Limitar el número de palabras en el textarea del formulario a 150
-[ ] Smooth scroll para edge ya que no lo soporta de forma nativa
+[X] Smooth scroll para edge ya que no lo soporta de forma nativa
 [X] Envio del formulario
